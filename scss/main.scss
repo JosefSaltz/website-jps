@@ -1,53 +1,86 @@
-$blue: rgb(2, 118, 193);
-$dark-blue: rgb(27, 87, 172);
-$white: rgb(231, 230, 232);
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@mixin zeroes {
-  padding: 0;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@mixin create-well {
+  box-shadow: inset 0px 0px 1px black, 0px 0px 1px black;
+  background: rgba(0, 0, 0, 0.2);
 }
-
+//COLORS
+$background-blue: #031E2F;
+$charcoal: #364156;
+$pastel-gray: #CDCDCD;
+$light-cyan: #DFF8EB;
+//COLORS
 * {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-  @include zeroes;
-  background: $blue;
+html,
+body {
+  background-color: $background-blue;
 }
 
-.topnav {
-  @include zeroes;
-  background-color: $dark-blue;
-  height: 3em;
-  list-style-type: none;
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  box-shadow: 0px 0px 0px 1px black;
   overflow: hidden;
 }
 
-.topnav li {
-  float: left;
-}
-
-.topnav li a {
-  color: $white;
-  margin-top: 50%;
-  padding: 50% 1em;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
-.container {
-  @include zeroes;
-  background: $blue;
-  height: 100%;
-}
-
-.landing-panel {
-  @include zeroes;
-  background: $white;
+.navbar {
+  margin: 0 auto;
+  padding: 7px;
   text-align: center;
 }
 
-h1 {
-  @include zeroes;
+.logo {
+  padding: 5px;
+  float: left;
+  color: $charcoal;
+  margin: 7px 0px 0px 3px;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 7px;
+  margin: 0 3px;
+}
+
+.mobile-menu {
+  margin: 1px 0 0 0;
+  padding: 0;
+  float: right;
+  height: 48px;
+  width: 48px;
+  padding-top: 10px;
+  visibility: hidden;
+}
+
+.mobile-menu div {
+  height: 2px;
+  background: $charcoal;
+  margin: 6px;
+}
+
+.logo:hover {
+  @include create-well;
+  transition: 0.2s;
+}
+
+.navbar li:hover {
+  @include create-well;
+  transition: 0.2s;
+}
+
+.panel {
+  //height: 100vh;
+  //background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: $charcoal;
 }
