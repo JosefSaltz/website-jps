@@ -8,6 +8,11 @@ html,
 body {
   background-color: #031E2F; }
 
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: lighter; }
+
 .nav {
   background-color: white;
   width: 100%;
@@ -25,13 +30,16 @@ body {
   padding: 5px;
   float: left;
   color: #364156;
-  margin: 7px 0px 0px 3px; }
+  margin: 0px 0px 0px 3px; }
 
 .navbar li {
   display: inline-block;
   font-size: 20px;
   padding: 7px;
   margin: 0 3px; }
+
+.spacer {
+  height: 50px; }
 
 .mobile-menu {
   margin: 1px 0 0 0;
@@ -60,3 +68,12 @@ body {
 a {
   text-decoration: none;
   color: #364156; }
+
+.background-pic {
+  height: 100vw;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("golden-trans.png");
+  background-position: center; }

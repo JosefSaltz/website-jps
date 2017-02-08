@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/JosefSaltz/website-jps#readme",
   "devDependencies": {
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
   }

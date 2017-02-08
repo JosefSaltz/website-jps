@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 @mixin create-well {
   box-shadow: inset 0px 0px 1px black, 0px 0px 1px black;
   background: rgba(0, 0, 0, 0.2);
 }
+
 //COLORS
 $background-blue: #031E2F;
 $charcoal: #364156;
 $pastel-gray: #CDCDCD;
 $light-cyan: #DFF8EB;
 //COLORS
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -19,6 +22,13 @@ html,
 body {
   background-color: $background-blue;
 }
+h1 {
+  color: white;
+  text-align: center;
+  font-weight:lighter;
+}
+
+
 
 .nav {
   background-color: white;
@@ -39,7 +49,7 @@ body {
   padding: 5px;
   float: left;
   color: $charcoal;
-  margin: 7px 0px 0px 3px;
+  margin: 0px 0px 0px 3px;
 }
 
 .navbar li {
@@ -47,6 +57,10 @@ body {
   font-size: 20px;
   padding: 7px;
   margin: 0 3px;
+}
+
+.spacer {
+  height: 50px;
 }
 
 .mobile-menu {
@@ -75,6 +89,7 @@ body {
   transition: 0.2s;
 }
 
+
 .panel {
   //height: 100vh;
   //background-color: white;
@@ -83,4 +98,17 @@ body {
 a {
   text-decoration: none;
   color: $charcoal;
+}
+
+.background-pic {
+  height: 100vw;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("golden-trans.png");
+  
+  background-position: center;
+
+
 }
