@@ -8,6 +8,13 @@ html,
 body {
   background-color: #031E2F; }
 
+.profile-img {
+  width: 18vw;
+  border-radius: 200px;
+  border: solid thick white;
+  display: block;
+  margin: 0 auto; }
+
 h1 {
   color: white;
   text-align: center;
@@ -70,10 +77,11 @@ a {
   color: #364156; }
 
 .background-pic {
-  height: 100vw;
-  margin: 0;
+  height: 100vh;
   padding: 0;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url("golden-trans.png");
-  background-position: center; }
+  background-position: center;
+  z-index: -1; }
