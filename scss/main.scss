@@ -20,24 +20,25 @@ $light-cyan: #DFF8EB;
 
 html,
 body {
-  background-color: $background-blue;
-}
-
-
-.profile-img {
-  width: 18vw;
-  border-radius: 200px;
-  border: solid thick white;
-  display: block;
-  margin: 0 auto;
-
-
+  height: 100vh;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("golden-trans.png");
+  background-position: center;
+  z-index: -1;
 }
 
 h1 {
   color: white;
   text-align: center;
   font-weight:lighter;
+}
+
+a {
+  text-decoration: none;
+  color: $charcoal;
 }
 
 .nav {
@@ -71,9 +72,43 @@ h1 {
 
 .spacer {
   height: 50px;
+  position:fixed;
 }
 
-.mobile-menu {
+.logo:hover {
+  @include create-well;
+  transition: 0.2s;
+}
+
+.navbar li:hover {
+  @include create-well;
+  transition: 0.2s;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;l
+}
+
+.landing {
+  height: 250px;
+}
+
+.profile-img {
+  width: 18vw;
+  border-radius: 200%;
+  border: solid thick white;
+  display: block;
+  margin: 0 auto;
+}
+
+.background-pic {
+
+}
+
+/*.mobile-menu {
   margin: 1px 0 0 0;
   padding: 0;
   float: right;
@@ -87,35 +122,4 @@ h1 {
   height: 2px;
   background: $charcoal;
   margin: 6px;
-}
-
-.logo:hover {
-  @include create-well;
-  transition: 0.2s;
-}
-
-.navbar li:hover {
-  @include create-well;
-  transition: 0.2s;
-}
-
-
-.panel {
-}
-
-a {
-  text-decoration: none;
-  color: $charcoal;
-}
-
-.background-pic {
-  height: 100vh;
-  padding: 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url("golden-trans.png");
-  background-position: center;
-  z-index: -1;
-
-}
+}*/
