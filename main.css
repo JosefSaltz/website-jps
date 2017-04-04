@@ -6,19 +6,23 @@
 
 html,
 body {
-  background-color: #031E2F; }
-
-.profile-img {
-  width: 18vw;
-  border-radius: 200px;
-  border: solid thick white;
-  display: block;
-  margin: 0 auto; }
+  height: 100vh;
+  padding: 0;
+  background-color: #031E2F;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("golden-trans.png");
+  background-position: center; }
 
 h1 {
   color: white;
   text-align: center;
   font-weight: lighter; }
+
+a {
+  text-decoration: none;
+  color: #364156; }
 
 .nav {
   background-color: white;
@@ -26,7 +30,9 @@ h1 {
   height: 50px;
   position: fixed;
   box-shadow: 0px 0px 0px 1px black;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10;
+  clear: both; }
 
 .navbar {
   margin: 0 auto;
@@ -45,23 +51,6 @@ h1 {
   padding: 7px;
   margin: 0 3px; }
 
-.spacer {
-  height: 50px; }
-
-.mobile-menu {
-  margin: 1px 0 0 0;
-  padding: 0;
-  float: right;
-  height: 48px;
-  width: 48px;
-  padding-top: 10px;
-  visibility: hidden; }
-
-.mobile-menu div {
-  height: 2px;
-  background: #364156;
-  margin: 6px; }
-
 .logo:hover {
   box-shadow: inset 0px 0px 1px black, 0px 0px 1px black;
   background: rgba(0, 0, 0, 0.2);
@@ -72,16 +61,32 @@ h1 {
   background: rgba(0, 0, 0, 0.2);
   transition: 0.2s; }
 
-a {
-  text-decoration: none;
-  color: #364156; }
+.spacer {
+  width: 100%;
+  height: 50px; }
 
-.background-pic {
+.content-container {
+  perspective: 1px;
   height: 100vh;
-  padding: 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url("golden-trans.png");
-  background-position: center;
-  z-index: -1; }
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative; }
+
+.portrait-panel {
+  height: 18%;
+  width: 75%;
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: solid #364156; }
+
+.profile-img {
+  height: 18vh;
+  border-radius: 200%;
+  border: solid thick white;
+  display: block;
+  margin: 0 auto; }
