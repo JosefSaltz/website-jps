@@ -2,7 +2,8 @@
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html,
 body {
@@ -14,16 +15,6 @@ body {
   background-repeat: no-repeat;
   background-image: url("golden-trans.png");
   background-position: center; }
-
-h1 {
-  background-color: #565656;
-  color: transparent;
-  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-align: center;
-  padding-top: 20px; }
 
 a {
   text-decoration: none;
@@ -78,20 +69,31 @@ a {
   overflow-y: auto;
   position: relative; }
 
-.portrait-panel {
+.greeting {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  height: 50%;
-  width: 65%;
+  width: 70%;
   min-width: 350px;
-  padding: 50px 0;
+  max-width: 720px;
+  padding: 50px 20px;
   background-color: white;
   position: absolute;
   top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
   border: solid #364156;
-  clear: both; }
+  clear: both;
+  overflow: hidden; }
+
+.greeting h1 {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.9em; }
 
 .grates {
   float: left;
@@ -101,13 +103,9 @@ a {
 
 .profile-img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  height: 50%;
+  width: 40%;
+  max-width: 300px;
   border-radius: 200%;
   border: solid 6px #364156;
   display: block;
   margin: 0 auto; }
-
-.aboutme-panel {
-  background-color: #e2e2e2;
-  height: 25%;
-  width: 60%; }
