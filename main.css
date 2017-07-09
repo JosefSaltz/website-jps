@@ -16,6 +16,12 @@ a {
   text-decoration: none;
   color: #364156; }
 
+p {
+  line-height: 140%; }
+
+span {
+  font-size: 1.6em; }
+
 .clearfix {
   clear: both; }
 
@@ -92,7 +98,8 @@ a {
   position: relative;
   margin: auto;
   margin-bottom: 50vh;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  padding: 40px; }
 
 .greeting h1 {
   background-color: #565656;
@@ -101,9 +108,10 @@ a {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  text-align: center;
+  text-align: justify;
   padding-top: 20px;
-  font-size: 1.9em; }
+  font-size: 1.9em;
+  line-height: 130%; }
 
 .about-me {
   width: 75%;
@@ -140,7 +148,7 @@ a {
   font-weight: bold; }
 
 .techs {
-  margin: 0 auto;
+  margin: 0 40px;
   width: 75%;
   padding: 0; }
 
