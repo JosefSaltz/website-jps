@@ -10,15 +10,20 @@ body {
   height: 100vh;
   padding: 0;
   background-color: #031E2F;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url("golden-trans.png");
-  background-position: center; }
+  overflow-y: hidden; }
 
 a {
   text-decoration: none;
   color: #364156; }
+
+.clearfix {
+  clear: both; }
+
+.content-container a {
+  color: #0b5b8e; }
+
+.content-container a:hover {
+  color: #0e7abe; }
 
 .nav {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -66,23 +71,28 @@ a {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
-  position: relative; }
+  overflow-y: scroll;
+  position: relative;
+  background-image: url("img/golden-trans.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .greeting {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  width: 70%;
+  width: 75%;
   min-width: 350px;
-  max-width: 720px;
+  max-width: 1000px;
   padding: 50px 20px;
   background-color: white;
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: solid #364156;
   clear: both;
-  overflow: hidden; }
+  overflow: auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50vh;
+  margin-top: 10vh; }
 
 .greeting h1 {
   background-color: #565656;
@@ -95,11 +105,67 @@ a {
   padding-top: 20px;
   font-size: 1.9em; }
 
-.grates {
+.about-me {
+  width: 75%;
+  min-width: 350px;
+  max-width: 1000px;
+  padding: 50px 20px;
+  background-color: white;
+  border: solid #364156;
+  clear: both;
+  overflow: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50vh;
+  padding: 40px; }
+
+.about-me p {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+.about-me h1 {
+  color: #0b5b8e;
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 2.5em;
+  font-weight: bold; }
+
+.techs {
+  margin: 0 auto;
+  width: 75%;
+  padding: 0; }
+
+.tech {
+  width: 28%;
+  height: 300px;
   float: left;
-  font-size: 5em;
-  margin: 0;
-  position: absolute; }
+  margin: auto 15px; }
+
+.tech p {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center; }
+
+.tech img {
+  width: 100%;
+  max-height: 200px;
+  margin: auto; }
 
 .profile-img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
