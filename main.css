@@ -183,3 +183,7 @@ span {
   border: solid 6px #364156;
   display: block;
   margin: 0 auto; }
+
+  .cert img {
+    width: 100%;
+  }
