@@ -147,13 +147,23 @@ span {
   font-size: 2.5em;
   font-weight: bold; }
 
+.work-site img {
+  display: block;  
+  width: 500px;
+}
+
+.work-site a {
+  margin: aut0 0;
+}
+
 .techs {
-  margin: 0 40px;
-  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
   padding: 0; }
 
 .tech {
-  width: 28%;
+
   height: 300px;
   float: left;
   margin: auto 15px; }
@@ -171,9 +181,13 @@ span {
   text-align: center; }
 
 .tech img {
-  width: 100%;
-  max-height: 200px;
-  margin: auto; }
+
+  width: 60%;
+  height: 60%;
+  padding: 0;
+  margin: 0 auto; 
+
+}
 
 .profile-img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
