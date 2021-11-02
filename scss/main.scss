@@ -1,77 +1,245 @@
-// RESET
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-}
+  padding: 0;
+  box-sizing: border-box; }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
+html,
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  height: 100vh;
+  padding: 0;
+  background-color: #031E2F;
+  overflow-y: hidden; }
+
+a {
+  text-decoration: none;
+  color: #364156; }
+
+p {
+  line-height: 140%; }
+
+span {
+  font-size: 1.6em; }
+
+.content-container a {
+  color: #0b5b8e; }
+
+.content-container a:hover {
+  color: #0e7abe; }
+.blur-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+.blur-container {
+  background: inherit;
+}
+.nav {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+  clear: both;
+  border-bottom: solid #364156; }
+
+.navbar {
+  margin: 0 auto;
+  padding: 7px;
+  text-align: center; }
+
+.logo {
+  padding: 5px;
+  float: left;
+  color: #364156;
+  margin: 0px 0px 0px 3px; }
+
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 7px;
+  margin: 0 3px; }
+
+#hamburger {
+  display: hidden;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+.dropdown {
+  display: none;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
+/* Hides navbar entries when screen width is too small */
+  @media screen and (max-width: 550px) {
+    .nav .navbar li {
+      display: none;
+    }
+    #hamburger {
+      display: inline-block;
+      
+    }
   }
+
+.logo:hover {
+  box-shadow: inset 0px 0px 1px black, 0px 0px 1px black;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.2s; }
+
+.navbar li:hover {
+  box-shadow: inset 0px 0px 1px black, 0px 0px 1px black;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.2s; }
+
+.spacer {
+  width: 100%;
+  height: 50px; }
+
+.content-container {
+  perspective: 1px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
   
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.profile-img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  max-width: 30%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 500px;
 }
-// RESET CODE
 
+.greeting {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 75%;
+  min-width: 350px;
+  max-width: 1000px;
+  padding: 50px 20px;
+  background-color: white;
+  border: solid #364156;
+  clear: both;
+  overflow: auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50vh;
+  margin-top: 10vh;
+  padding: 40px; }
+
+.greeting h1 {
+  background-color: #0d2a40;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 1.9em;
+  line-height: 130%; }
+
+  @media screen and (max-width: 768px) {
+    .greeting h1 { 
+      font-size: 3vw; 
+    }
+
+    .about-me p {
+      font-size: 3vw;
+    }
+
+    .about-me a {
+      font-size: 3vw;
+    }
+  }
+
+.placard {
+  width: 75%;
+  min-width: 350px;
+  max-width: 1000px;
+  padding: 50px 20px;
+  background: inherit;
+  filter: blur(0px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  margin: 0 auto;
+  padding: 40px; 
+
+.placard p {
+  background-color: #0d2a40;
+  font-size: px;
+  color: white;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold; }}
+
+.placard h1 {
+  color: #0b5b8e;
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 2.5em;
+  font-weight: bold; }
+
+.work-site img {
+  display: block;  
+  width: 500px;
+}
+
+.work-site a {
+  margin: aut0 0;
+}
+
+.techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding: 0; }
+
+.tech {
+
+  height: 300px;
+  float: left;
+  margin: auto 15px; }
+
+.tech p {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center; }
+
+.tech img {
+
+  width: 60%;
+  height: 60%;
+  padding: 0;
+  margin: 0 auto; 
+
+}
+
+
+  .cert img {
+    width: 100%;
+  }

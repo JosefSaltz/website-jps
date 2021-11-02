@@ -1,0 +1,15 @@
+{
+  "name": "website-jps",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "main": "index.js",
+  "repository": "git@github.com:JosefSaltz/website-jps.git",
+  "author": "Josef Saltz <jps.webdev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.43.4"
+  },
+  "scripts": {
+    "start": "yarn sass --watch ./scss/main.scss:./main.css"
+  }
+}
