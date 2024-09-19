@@ -7,9 +7,7 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '@/components/SocialIcons'
 import logoTheDotDevs from '@/images/logos/logo_tdd.svg'
 import logoFreelance from '@/images/logos/logo_freelance.svg'
@@ -282,12 +280,6 @@ export default async function Home() {
           Hi, I'm Josef engineer, entrepreneur, and founder of The Dot Devs LLC, based in the vibrant Portland Metro Area. At The Dot Devs, we’re not just building software—we’re crafting digital experiences that help businesses thrive. Whether it’s innovative web services or tailored software products, I lead our team in delivering solutions that drive customer engagement and accelerate revenue growth. Let's turn your ideas into powerful realities.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
-            <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
             <SocialLink
               href="#"
               aria-label="Follow on GitHub"
