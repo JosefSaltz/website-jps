@@ -37,6 +37,6 @@
       "excludeDirectories": ["**/node_modules","**/.next", "_build"],
       "excludeFiles": []
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "postcss.config.ts", "prettier.config.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "postcss.config.js", "prettier.config.js"],
   "exclude": ["node_modules"]
 }
