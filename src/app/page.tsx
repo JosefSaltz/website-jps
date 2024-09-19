@@ -11,10 +11,10 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoTheDotDevs from '@/images/logos/logo_tdd.svg'
+import logoFreelance from '@/images/logos/logo_freelance.svg'
+import logoDPH from '@/images/logos/logo_dph.svg'
+import logoUCSF from '@/images/logos/logo_ucsf.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -187,35 +187,38 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'The Dot Devs',
+      title: 'Founder/Full-Stack Engineer',
+      logo: logoTheDotDevs,
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'Freelance Web Developer',
+      title: 'Full-Stack Engineer',
+      logo: logoFreelance,
+      start: '2017',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'San Francisco Department of Public Health',
+      title: 'System Administrator II',
+      logo: logoDPH,
+      start: '2018',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'UCSF',
+      title: 'IT Support Analyst',
+      logo: logoUCSF,
+      start: '2015',
+      end: '2016',
     },
   ]
 
@@ -273,13 +276,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            Product designer, founder, and Full-Stack engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Josef, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+          Hi, I'm Josef engineer, entrepreneur, and founder of The Dot Devs LLC, based in the vibrant Portland Metro Area. At The Dot Devs, we’re not just building software—we’re crafting digital experiences that help businesses thrive. Whether it’s innovative web services or tailored software products, I lead our team in delivering solutions that drive customer engagement and accelerate revenue growth. Let's turn your ideas into powerful realities.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
