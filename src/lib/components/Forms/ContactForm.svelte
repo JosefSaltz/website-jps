@@ -3,7 +3,7 @@
 </script>
 
 <div id="contact" class="h-screen rounded-md border-2 p-16 space-y-6">
-  <h3 class="text-3xl">Contact Me</h3>
+  <h3 class="text-3xl">Work With Me</h3>
   <form use:enhance>
     <ul class="space-y-6">
       <li>
