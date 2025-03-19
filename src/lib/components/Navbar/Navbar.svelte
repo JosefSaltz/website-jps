@@ -1,8 +1,8 @@
-<nav class="flex flex-row justify-end h-16 border-b-2 border-black">
+<nav class="absolute top-0 flex flex-row justify-end w-full h-16 border-b-2 border-black bg-white">
   <ul class="list-none flex flex-row space-x-6 pr-8 items-center lg:text-lg font-semibold">
     <li><a href="#about">About</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
-    <li><button>Contact</button></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
