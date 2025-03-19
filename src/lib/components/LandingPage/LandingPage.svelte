@@ -1,20 +1,15 @@
-<script>
-	import Meteors from "$components/Meteors/Meteors.svelte";
-
+<script lang="ts">
+	import Meteors from "$components/MagicUI/Meteors.svelte";
 </script>
-<div id="landing-page-container" class="flex flex-col justify-center items-center h-full w-full bg-slate-900">
-  <div
-  class="relative flex w-full h-[100vh] justify-center overflow-hidden bg-background p-20 md:shadow-xl "
-  >
-    <Meteors number={1000} />
-    <div id="container-title-text" class="h-fit bg-clip-text text-white">
-      <h1 class="justify-self-end z-10 whitespace-pre-wrap text-center text-7xl tracking-tight font-semibold bg-gradient-to-br from-white to-slate-500/40 text-transparent bg-clip-text">Build With The Power Of The Web</h1>
-      <h2 class="text-5xl font-semibold self-end">Josef Saltz</h2>
-      <h2 class="text-4xl self-end">Full Stack Developer</h2>
+
+<div id="landing-page-container" class="flex flex-col justify-center items-center w-full h-full max-h-[1440px] bg-zinc-900 shadow-inner shadow-black">
+  <div id="meteor-title-card" class="relative max-w-3xl overflow-hidden rounded-xl bg-slate-900 shadow-black shadow-xl border-slate-800 border-[1px] ">
+    <Meteors number={100} />
+    <div class="flex flex-col justify-center items-center w-full max-w-[1440px] overflow-hidden p-40 space-y-8"> 
+      <!-- Splash Text -->
+      <div id="container-title-text" class="w-full h-fit bg-clip-text text-white space-y-8">
+        <h1 class="z-50 whitespace-pre-wrap text-7xl tracking-tight font-semibold bg-gradient-to-br from-white to-slate-500/40 text-transparent bg-clip-text">Build With The Power Of The <span class="text-sky-800">Web</span></h1>
+      </div>
     </div>
   </div>  
 </div>
-
-<style>
-
-</style>
