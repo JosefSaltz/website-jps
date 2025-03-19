@@ -2,7 +2,7 @@
 	import { enhance } from "$app/forms";
 </script>
 
-<div class="rounded-md border-2 p-16 space-y-6">
+<div id="contact" class="h-screen rounded-md border-2 p-16 space-y-6">
   <h3 class="text-3xl">Contact Me</h3>
   <form use:enhance>
     <ul class="space-y-6">
