@@ -1,7 +1,13 @@
 <script lang="ts">
 	import About from "$components/About/About.svelte";
-  import LandingPage from "$components/LandingPage/LandingPage.svelte";
+	import ContactForm from "$components/Forms/ContactForm.svelte";
+	import Hero from "$components/Hero/Hero.svelte";
+	import Portfolio from "$components/Portfolio/Portfolio.svelte";
+	import Skills from "$components/Skills/Skills.svelte";
 </script>
 
-<LandingPage />
+<Hero />
 <About />
+<Skills />
+<Portfolio />
+<ContactForm />
