@@ -6,7 +6,7 @@
   import Navbar from "$components/Navbar/Navbar.svelte";
 </script>
 
-<div id="hero" class="flex flex-col justify-center items-center w-full h-screen bg-zinc-900">
+<div id="hero" class="flex flex-1 flex-col justify-center items-center w-full h-screen bg-zinc-900">
   <Navbar />
   <GridPattern
     width={30}
@@ -16,17 +16,18 @@
       "[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]"
     )}
   />
-  <div id="meteor-title-card" class="relative aspect-[6/5] rounded-xl bg-slate-900 shadow-black shadow-xl border-slate-800 border-[1px] overflow-hidden">
-    <Meteors number={100} />
+  
+  <div id="meteor-title-card" class="relative rounded-xl bg-slate-900 shadow-black shadow-xl border-slate-800 border-[1px] overflow-hidden">
+    <Meteors number={200} />
     <!-- Splash Text -->
     <div 
       id="container-title-text" 
       class="w-full max-w-3xl p-40 bg-clip-text text-white">
       <TitleText />
     </div>
-    
   </div>
-  <div class="flex justify-center">
+
+  <div class="flex-col flex-shrink justify-center">
     <a href="#about" class="text-white text-center">Let's Go</a>
   </div> 
 </div>

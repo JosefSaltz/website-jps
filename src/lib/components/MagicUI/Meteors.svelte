@@ -8,15 +8,14 @@
   let changeMeteors = (num: number) => {
     meteorStyles = [];
     const styles = [...new Array(num)].map(() => {
-      const leftVal = Math.floor(Math.random() * 700);
       // Spawn potentially between -40vw and up to 100+ vw for even spread
-      const left = (Math.random() * -40) + (Math.random() * 120) + "vw"
+      const left = (Math.random() * -50) + (Math.random() * 120) + "vw"
       
       return {
-      top: -20,
-      left,
-      animationDelay: Math.random() * 1 + 0.2 + "s",
-      animationDuration: Math.floor(Math.random() * 8 + 2.9) + "s",
+        top: -20,
+        left,
+        animationDelay: Math.random() * 1 + 0.2 + "s",
+        animationDuration: Math.floor(Math.random() * 8 + 4) + "s",
       }
     });
     meteorStyles = styles;
@@ -31,7 +30,7 @@
   <span
     id="meteor-{idx+1}"
     class={cn(
-      "pointer-events-none absolute size-[2.4px] rotate-[215deg] animate-meteor rounded-full bg-slate-500 shadow-[0_0_0_1px_#ffffff10]"
+      "pointer-events-none absolute size-[2.4px] rotate-[215deg] long-meteor rounded-full bg-slate-500 shadow-[0_0_0_1px_#ffffff10] z-0"
     )}
     style="
       top: {style.top}px; 
@@ -46,3 +45,24 @@
     ></div>
   </span>
 {/each}
+
+<style>
+  /* Tweaked Version of base class */
+  @keyframes long_meteor {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-22rem);
+    opacity: 0;
+  }
+}
+
+.long-meteor {
+  animation: long_meteor 5s linear infinite;
+}
+</style>
