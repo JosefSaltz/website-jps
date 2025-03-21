@@ -2,5 +2,5 @@
   let { icon, name } = $props()
 </script>
 <div>
-  {icon} { name }
+  { icon } { name }
 </div>

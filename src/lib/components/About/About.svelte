@@ -1,34 +1,31 @@
 <script lang="ts">
-	import Social from "$components/Portfolio/Social.svelte";
 	import WorkCard from "$components/Portfolio/WorkCard.svelte";
 	import ProTitle from "./ProTitle.svelte";
 	import Summary from "./Summary.svelte";
-
+  import chatIcon from "$assets/svg/chat.svelte"
+  import computerIcon from "$assets/svg/computer.svelte"
+  import gearIcon from "$assets/svg/gear.svelte"
+  import serverIcon from "$assets/svg/server.svelte"
+  import appIcon from "$assets/svg/app.svelte"
+	import ServiceTile from "./ServiceTile.svelte";
 </script>
 
-<div id="about" class="flex flex-col items-center h-screen bg-white pt-20 space-y-20">
-  <div class="w-full xl:max-w-6xl flex flex-row justify-end justify-self-center px-20">
+<div id="about" class="flex flex-col items-center md:h-screen bg-white pt-20 space-y-20">
+  
+  <div class="w-full xl:max-w-6xl px-10 md:px-20 flex flex-row justify-end justify-self-center ">
     <ProTitle />
   </div>
-  <div class="max-w-6xl px-20">
-    <h4 class="text-4xl font-semibold mb-4">About</h4>
+  <div class="max-w-6xl px-10 md:px-20">
+    <h4 class="text-3xl md:text-4xl font-semibold mb-2 md:mb-4">About</h4>
     <Summary />
   </div>
   <div class="flex flex-col w-full max-w-6xl px-20">
     <h1 class="text-4xl font-semibold mb-8">Services</h1>
-    <div id="services-tile-container" class="flex flex-row justify-center space-x-8">
-      <div class="tile">
-        <h3>Consulting</h3>
-      </div>
-      <div class="tile">
-        <h3>Static Site Development</h3>
-      </div>
-      <div class="tile">
-        <h3>Hosting Solutions</h3>
-      </div>
-      <div class="tile">
-        <h3>Web App Development</h3>
-      </div>
+    <div id="services-tile-container" class="flex flex-row flex-wrap justify-center sm:space-8">
+      <ServiceTile name={'App Development'} icons={[appIcon, gearIcon]} />
+      <ServiceTile name={'Consulting'} icons={[chatIcon]} />
+      <ServiceTile name={'Hosting'} icons={[serverIcon]} />
+      <ServiceTile name={'Static Site Development'} icons={[computerIcon]} />
     </div>
   </div>
   <div class="flex flex-col w-full max-w-6xl px-20">
@@ -45,13 +42,5 @@
 </div>
 
 <style>
-  .tile {
-    border: solid thin black;
-    border-radius: 8px;
-    height: 12rem;
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
 </style>

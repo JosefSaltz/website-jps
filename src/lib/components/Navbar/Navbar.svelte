@@ -1,4 +1,4 @@
-<nav class="absolute top-0 flex flex-row justify-end w-full h-16 border-b-2 border-black bg-white">
+<nav class="relative top-0 flex flex-row justify-end w-full h-16 border-b-2 border-black bg-white">
   <ul class="list-none flex flex-row space-x-6 pr-8 items-center lg:text-lg font-semibold">
     <li><a href="#about">About</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
