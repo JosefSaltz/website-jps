@@ -20,7 +20,7 @@
 <svg
   aria-hidden="true"
   class={cn(
-    "pointer-events-none absolute inset-0 h-full w-full",
+    "h-full w-full pointer-events-none absolute inset-0",
     className
   )}
   {...otherProps}
