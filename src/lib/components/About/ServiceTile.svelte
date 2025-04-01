@@ -1,18 +1,26 @@
 <script lang="ts">
-	import type { Component, SvelteComponent } from "svelte";
-
   type Props = {
     name: string,
-    icons: Component[]
+    icons: any[]
   }
   let { name, icons }: Props = $props();
+
+  let mouseCoords = { x: 0, y: 0 };
+
+  function handleMousemove(event: Event) {
+    mouseCoords.x = event.clientX;
+    mouseCoords.y = event.clientY;
+  }
+
 </script>
 
-<div class="tile">
-  <h3 class="h-10 pt-2">{ name }</h3>
-  <div class="relative justify-center items-center">
+<div class="tile m-2 max-w-36 w-fit md:w-40 md:max-w-full" role="presentation" onmouseenter={handleMousemove}>
+  <!-- Tile Name -->
+  <h3 class="md:text-lg">{ name }</h3>
+  <!-- Icon -->
+  <div class="flex flex-col justify-center items-center">
     {#each icons as Icon, i}
-      <Icon className={` w-32 sm:w-24`}></Icon>
+      <Icon className={`w-[32%]`}></Icon>
     {/each}
   </div>
 </div>
@@ -22,11 +30,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 12rem;
-    width: fit-content;
-    min-width: 12rem;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
     border: solid thin black;
     border-radius: 8px;
-
   }
 </style>
