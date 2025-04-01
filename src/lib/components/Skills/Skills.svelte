@@ -2,12 +2,23 @@
 	import SkillSection from "./SkillSection.svelte";
 </script>
 
-<div class="h-screen bg-slate-800 text-2xl px-20 text-zinc-200">
-  <h2 class="text-3xl">Skills</h2>
-  <p>
+<div class="
+  h-screen 
+  text-2xl 
+  px-10 
+  md:px-20
+  pt-10 
+  flex 
+  flex-col 
+  items-center 
+  bg-slate-800  
+  text-zinc-200
+">
+  <h2 class="text-4xl md:text-5xl ">Skills</h2>
+  <p class="max-w-6xl px-10 md:px-20">
     I've worked with a large amount of web technologies over the last years ranging from popular libraries like <span class="text-sky-800">React</span> and <span class="text-sky-800">Next.js</span> to <span class="text-orange-600">Svelte</span> and <span class="text-orange-600">Svelte Kit.</span> I'm familiar with building APIs and developing front ends with responsive UI and Server side API Endpoints for integrating with any service your business requires.
   </p>
-  <div class="flex flex-wrap">
+  <div class="mt-16 flex flex-wrap space-x-4">
   <SkillSection 
     name={'Languages'} 
     skills={[

@@ -4,7 +4,7 @@
 
 </script>
 <section>
-  <h4>{name}</h4>
+  <h4 class="font-bold">{name}</h4>
   <ul>
     {#each skills as skill}
       <li>{skill}</li>
