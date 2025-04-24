@@ -10,7 +10,7 @@ const config = {
 		alias: {
 			"$components": './src/lib/components/',
 			"$lib": "./src/lib",
-			"$assets": "./src/assets"
+			"$assets": "./src/lib/assets"
 		},
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
