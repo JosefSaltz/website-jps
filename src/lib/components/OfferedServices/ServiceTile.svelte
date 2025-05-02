@@ -3,7 +3,7 @@
     name: string,
     icons: any[]
   }
-  let { name, icons }: Props = $props();
+  let { name, icons, class: className = '' }: Props = $props();
 
   let mouseCoords = { x: 0, y: 0 };
 
@@ -14,7 +14,7 @@
 
 </script>
 
-<div class="tile m-2 max-w-36 w-fit md:w-40 md:max-w-full" role="presentation" onmouseenter={handleMousemove}>
+<div class={`tile m-2 max-w-40 w-fit md:w-40 md:max-w-full hover:scale-[120%] transition-transform ${className}`} role="presentation" onmouseenter={handleMousemove}>
   <!-- Tile Name -->
   <h3 class="md:text-lg">{ name }</h3>
   <!-- Icon -->
