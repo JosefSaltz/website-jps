@@ -2,7 +2,6 @@
   "version": "4",
   "specifiers": {
     "npm:@eslint/js@^9.25.1": "9.25.1",
-    "npm:@lucide/svelte@0.503": "0.503.0_svelte@5.28.2__acorn@8.14.1",
     "npm:@sveltejs/adapter-auto@3": "3.3.1_@sveltejs+kit@2.20.8__@sveltejs+vite-plugin-svelte@4.0.4___svelte@5.28.2____acorn@8.14.1___vite@5.4.19__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/enhanced-img@~0.4.4": "0.4.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/kit@^2.20.4": "2.20.8_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
@@ -31,7 +30,6 @@
     "npm:svelte@^5.25.7": "5.28.2_acorn@8.14.1",
     "npm:tailwind-merge@^3.1.0": "3.2.0",
     "npm:tailwind-variants@1": "1.0.0_tailwindcss@3.4.17__postcss@8.5.3",
-    "npm:tailwindcss-animate@^1.0.7": "1.0.7_tailwindcss@3.4.17__postcss@8.5.3",
     "npm:tailwindcss@^3.4.9": "3.4.17_postcss@8.5.3",
     "npm:typescript-eslint@^8.29.0": "8.31.0_eslint@9.25.1_typescript@5.8.3_@typescript-eslint+parser@8.31.0__eslint@9.25.1__typescript@5.8.3",
     "npm:typescript@^5.8.3": "5.8.3",
@@ -327,12 +325,6 @@
       "dependencies": [
         "@jridgewell/resolve-uri",
         "@jridgewell/sourcemap-codec"
-      ]
-    },
-    "@lucide/svelte@0.503.0_svelte@5.28.2__acorn@8.14.1": {
-      "integrity": "sha512-Y7Q8pHnX2YG8Ef4a/VnYFN9tTAJS33MiS78vQtPiyp5iiWuBlTMoViMiRUxQb7U9Ro46RdJ0kpCADvvha3Z2rA==",
-      "dependencies": [
-        "svelte"
       ]
     },
     "@napi-rs/wasm-runtime@0.2.9": {
@@ -2066,12 +2058,6 @@
         "tailwindcss@3.4.17_postcss@8.5.3"
       ]
     },
-    "tailwindcss-animate@1.0.7_tailwindcss@3.4.17__postcss@8.5.3": {
-      "integrity": "sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==",
-      "dependencies": [
-        "tailwindcss@3.4.17_postcss@8.5.3"
-      ]
-    },
     "tailwindcss@3.4.17_postcss@8.5.3": {
       "integrity": "sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==",
       "dependencies": [
@@ -2245,7 +2231,6 @@
     "packageJson": {
       "dependencies": [
         "npm:@eslint/js@^9.25.1",
-        "npm:@lucide/svelte@0.503",
         "npm:@sveltejs/adapter-auto@3",
         "npm:@sveltejs/enhanced-img@~0.4.4",
         "npm:@sveltejs/kit@^2.20.4",
@@ -2274,7 +2259,6 @@
         "npm:svelte@^5.25.7",
         "npm:tailwind-merge@^3.1.0",
         "npm:tailwind-variants@1",
-        "npm:tailwindcss-animate@^1.0.7",
         "npm:tailwindcss@^3.4.9",
         "npm:typescript-eslint@^8.29.0",
         "npm:typescript@^5.8.3",
