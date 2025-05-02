@@ -35,7 +35,7 @@
 ];
 </script>
 
-<div id="work" class="flex flex-col w-full max-w-6xl sm:px-10">
+<div id="work" class={`flex flex-col w-full ${className}`}>
   <h3 class={`font-semibold mb-4 ${headerSize}`}>My Work</h3>
   <div class="embla" use:emblaCarouselSvelte={{options, plugins}}>
     <div class="embla__container">

@@ -27,6 +27,6 @@
       </div>
     </div>
   </div>
-  <OfferedServices class="" headerSize={aboutHeaderSizes} />
+  <OfferedServices class="px-20" headerSize={aboutHeaderSizes} />
   <WorkCarousel class="px-20" headerSize={aboutHeaderSizes} />
 </div>
