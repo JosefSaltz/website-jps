@@ -7,12 +7,20 @@
   let { name, link, thumbnail }: Props = $props()
 </script>
 
-<div class="work-card flex justify-center items-center rounded-lg aspect-[3/2] min-w-10 max-w-40 bg-[{thumbnail}] text-center border-black border-[1px]">
-  <a href={link}>{name}</a>
+<div class="rounded-lg overflow-hidden">
+  <a href={link} role="button" aria-label="name">
+    <img src={thumbnail} class="" alt={name} />
+  </a>
 </div>
 
 <style>
-  .work-card {
-    aspect-ratio: 1/1;
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    border: solid thin black;
+    border-radius: 8px;
   }
 </style>

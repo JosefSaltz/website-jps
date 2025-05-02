@@ -1,15 +1,15 @@
 <script lang="ts">
-	import WorkCard from "$components/Portfolio/WorkCard.svelte";
 	import ProTitle from "./ProTitle.svelte";
 	import Summary from "./Summary.svelte";
-  import chatIcon from "$assets/svg/chat.svelte"
-  import computerIcon from "$assets/svg/computer.svelte"
-  import serverIcon from "$assets/svg/server.svelte"
-  import CombinedAppGear from "$assets/svg/combined-app-gear.svelte";
+  import chatIcon from "$lib/assets/svg/chat.svelte"
+  import computerIcon from "$lib/assets/svg/computer.svelte"
+  import serverIcon from "$lib/assets/svg/server.svelte"
+  import CombinedAppGear from "$lib/assets/svg/combined-app-gear.svelte";
 	import ServiceTile from "./ServiceTile.svelte";
+	import WorkCarousel from "$components/WorkCarousel/WorkCarousel.svelte";
 </script>
 
-<div id="about" class="flex flex-col items-center bg-white py-20 space-y-14">
+<div id="about" class="min-h-screen flex flex-col items-center bg-white py-20 space-y-14">
   <div class="w-full xl:max-w-6xl px-10 md:px-20 flex flex-row justify-end justify-self-center ">
     <ProTitle />
   </div>
@@ -26,13 +26,5 @@
       <ServiceTile name={'Web Sites'} icons={[computerIcon]} />
     </div>
   </div>
-  <div id="work" class="flex flex-col w-full max-w-6xl px-20">
-    <h3 class="text-4xl font-semibold mb-4">My Work</h3>
-    <div class="flex justify-center space-x-8">
-      <WorkCard name={"PIITA"} link={"https://piita.org"} thumbnail={'/img/piita.png'} />
-      <WorkCard name={"OneSimplePhone"} link={"https://smscola.vippbx.com"} thumbnail={'/img/1sp.png'} />
-      <WorkCard name={"Company C Ballet"} thumbnail={'/img/companyc.png'} />
-      <WorkCard name={"KeepOurNetFree"} thumbnail={'/img/keepournetfree.png'} />
-    </div>
-  </div>
+  <WorkCarousel />
 </div>
