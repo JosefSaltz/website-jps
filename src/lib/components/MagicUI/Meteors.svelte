@@ -9,13 +9,14 @@
     meteorStyles = [];
     const styles = [...new Array(num)].map(() => {
       // Spawn potentially between -40vw and up to 100+ vw for even spread
-      const left = (Math.random() * -50) + (Math.random() * 120) + "vw"
       
+      const top = -20
+      const left = (Math.random() * -50) + (Math.random() * 120) + "vw"
       return {
-        top: -20,
+        top,
         left,
         animationDelay: Math.random() * 1 + 0.2 + "s",
-        animationDuration: Math.floor(Math.random() * 8 + 4) + "s",
+        animationDuration: Math.floor(Math.random() * 8 + 6) + "s",
       }
     });
     meteorStyles = styles;
@@ -51,13 +52,16 @@
   @keyframes long_meteor {
   0% {
     transform: rotate(215deg) translateX(0);
-    opacity: 1;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1
   }
   70% {
     opacity: 1;
   }
   100% {
-    transform: rotate(215deg) translateX(-22rem);
+    transform: rotate(215deg) translateX(-64rem);
     opacity: 0;
   }
 }
