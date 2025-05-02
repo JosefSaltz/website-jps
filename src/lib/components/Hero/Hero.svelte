@@ -28,7 +28,7 @@
     />
     
     <div id="hero-content" class="flex flex-col justify-center h-full space-y-32 overflow-clip">
-      <Meteors number={200} />
+      
       <div
         id="meteor-title-card"
         class={`
@@ -39,6 +39,7 @@
           sm:shadow-xl sm:shadow-black 
         `}
       >
+        <Meteors number={200} />
         <!-- Splash Text -->
         <div id="container-title-text" class="max-w-3xl">
           <TitleText className={``} />
