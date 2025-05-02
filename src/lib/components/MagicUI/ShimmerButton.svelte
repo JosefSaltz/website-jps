@@ -2,8 +2,8 @@
   import { cn } from "$lib/utils";
   
   let {
-    className,
     children,
+    className = '',
     shimmerColor = "#ffffff",
     shimmerSize = "0.05em",
     shimmerDuration = "3s",
@@ -37,7 +37,7 @@
       <!--  spark before  -->
       <div
         class="animate-spin-around absolute inset-[-100%] w-auto rotate-0 [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,var(--shimmer-color)_var(--spread),transparent_var(--spread))] [translate:0_0]"
-      />
+      ></div>
     </div>
   </div>
   {@render children?.()}
