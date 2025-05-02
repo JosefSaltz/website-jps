@@ -26,8 +26,9 @@
       strokeDashArray="4 2"
       className={cn('[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]' + 'z-0')}
     />
-
+    
     <div id="hero-content" class="flex flex-col justify-center h-full space-y-32 overflow-clip">
+      <Meteors number={200} />
       <div
         id="meteor-title-card"
         class={`
@@ -38,13 +39,12 @@
           sm:shadow-xl sm:shadow-black 
         `}
       >
-        <Meteors number={200} />
         <!-- Splash Text -->
-        <div id="container-title-text z-10 sm:m-40 md:p-20 xl:p-40" class="max-w-3xl ">
+        <div id="container-title-text" class="max-w-3xl">
           <TitleText className={``} />
         </div>
         <!-- Mobile Button -->
-        <div class="flex flex-col justify-center p-10">
+        <div class="flex flex-col justify-center pt-10">
           <LetsGoButton className={'sm:hidden'} />
         </div>
       </div>

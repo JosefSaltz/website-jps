@@ -3,7 +3,7 @@
 </script>
 
 <div class="
-  h-screen 
+  min-h-screen 
   text-2xl 
   px-10 
   md:px-20

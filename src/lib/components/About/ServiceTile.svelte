@@ -20,7 +20,7 @@
   <!-- Icon -->
   <div class="flex flex-col justify-center items-center">
     {#each icons as Icon, i}
-      <Icon className={`w-[32%]`}></Icon>
+      <Icon className={`w-[32%] md:w-[38%]`}></Icon>
     {/each}
   </div>
 </div>
