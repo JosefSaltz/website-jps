@@ -1,5 +1,7 @@
 <script lang="ts">
 	import SkillSection from "./SkillSection.svelte";
+  const aboutHeaderSizes = 'text-xl sm:text-2xl lg:text-4xl';
+  const aboutContentSizes = 'sm:text-xl lg:text-2xl';
 </script>
 
 <div class="
@@ -14,8 +16,9 @@
   bg-slate-800  
   text-zinc-200
 ">
-  <h2 class="text-4xl md:text-5xl ">Skills</h2>
-  <p class="max-w-6xl px-10 md:px-20">
+
+  <h2 class={`${aboutHeaderSizes}`}>Skills</h2>
+  <p class={`max-w-6xl px-10 md:px-20 ${aboutContentSizes}`}>
     I've worked with a large amount of web technologies over the last years ranging from popular libraries like <span class="text-sky-800">React</span> and <span class="text-sky-800">Next.js</span> to <span class="text-orange-600">Svelte</span> and <span class="text-orange-600">Svelte Kit.</span> I'm familiar with building APIs and developing front ends with responsive UI and Server side API Endpoints for integrating with any service your business requires.
   </p>
   <div class="mt-16 flex flex-wrap space-x-4">

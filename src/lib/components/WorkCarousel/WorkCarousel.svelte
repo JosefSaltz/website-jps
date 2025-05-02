@@ -7,7 +7,7 @@
   import emblaCarouselSvelte from 'embla-carousel-svelte'
   import Autoplay, { type AutoplayType } from 'embla-carousel-autoplay'
 
-  let { headerSize = '' } = $props();
+  let { class: className = '', headerSize = '' } = $props();
   let options = { loop: false }
   let plugins = [Autoplay()] satisfies AutoplayType[];
 
