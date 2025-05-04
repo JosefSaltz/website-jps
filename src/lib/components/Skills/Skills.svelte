@@ -17,7 +17,7 @@
   text-zinc-200
 ">
 
-  <h2 class={`${aboutHeaderSizes}`}>Skills</h2>
+  <h2 class={`${aboutHeaderSizes} self-start pb-10`}>Skills</h2>
   <p class={`max-w-6xl px-10 md:px-20 ${aboutContentSizes}`}>
     I've worked with a large amount of web technologies over the last years ranging from popular libraries like <span class="text-sky-800">React</span> and <span class="text-sky-800">Next.js</span> to <span class="text-orange-600">Svelte</span> and <span class="text-orange-600">Svelte Kit.</span> I'm familiar with building APIs and developing front ends with responsive UI and Server side API Endpoints for integrating with any service your business requires.
   </p>

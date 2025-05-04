@@ -7,7 +7,7 @@
   import emblaCarouselSvelte from 'embla-carousel-svelte'
   import Autoplay, { type AutoplayType } from 'embla-carousel-autoplay'
 
-  let { class: className = '', headerSize = '' } = $props();
+  let { class: className = '', aboutHeaderSizes = '' } = $props();
   let options = { loop: false }
   let plugins = [Autoplay()] satisfies AutoplayType[];
 
@@ -35,15 +35,17 @@
 ];
 </script>
 
-<div id="work" class={`flex flex-col w-full ${className}`}>
-  <h3 class={`font-semibold mb-4 ${headerSize}`}>My Work</h3>
-  <div class="embla" use:emblaCarouselSvelte={{options, plugins}}>
-    <div class="embla__container">
-      {#each workCards as { name, link, thumbnail }}
-        <div class="embla__slide">
-          <WorkCard {name} {link} {thumbnail} />
-        </div>
-      {/each}
+<div id="work" class={`flex flex-col ${className}`}>
+  <h3 class={`font-semibold mb-4 ${aboutHeaderSizes}`}>My Work</h3>
+  <div id="embla-layout" class="w-full flex justify-center">
+    <div class="embla max-w-[100rem]" use:emblaCarouselSvelte={{options, plugins}}>
+      <div class="embla__container">
+        {#each workCards as { name, link, thumbnail }}
+          <div class="embla__slide">
+            <WorkCard {name} {link} {thumbnail} />
+          </div>
+        {/each}
+      </div>
     </div>
   </div>
 </div>
