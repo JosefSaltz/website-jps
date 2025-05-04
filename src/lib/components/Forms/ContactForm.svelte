@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { enhance } from "$app/forms";
+  let { sectionPaddingSizes = '' } = $props()
 </script>
 
-<div id="contact" class="min-h-screen w-full pt-10 flex flex-col items-center">
+<div id="contact" class={`min-h-screen w-full flex flex-col items-center ${sectionPaddingSizes}`}>
   <h3 class="text-5xl">Work With Me</h3>
   <h5>Let’s Build Something Great Together!</h5>
 

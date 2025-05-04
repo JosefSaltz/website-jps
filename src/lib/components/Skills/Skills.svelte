@@ -1,21 +1,20 @@
 <script lang="ts">
 	import SkillSection from "./SkillSection.svelte";
-  const aboutHeaderSizes = 'text-xl sm:text-2xl lg:text-4xl';
-  const aboutContentSizes = 'sm:text-xl lg:text-2xl';
+  let { sectionPaddingSizes = '', aboutHeaderSizes = '', aboutContentSizes = '' } = $props()
 </script>
 
-<div class="
+<div 
+id="skills"
+class={`
   min-h-screen 
   text-2xl 
-  px-10 
-  md:px-20
-  pt-10 
   flex 
   flex-col 
   items-center 
   bg-slate-800  
   text-zinc-200
-">
+  ${sectionPaddingSizes}}
+`}>
 
   <h2 class={`${aboutHeaderSizes} self-start pb-10`}>Skills</h2>
   <p class={`max-w-6xl px-10 md:px-20 ${aboutContentSizes}`}>
