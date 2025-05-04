@@ -1,14 +1,20 @@
-<nav id="navbar" class="relative z-50 top-0 flex flex-row justify-end w-full h-16 border-b-2 border-black bg-slate-50">
+<nav id="navbar" class="fixed z-50 top-0 flex flex-row justify-end w-full h-16 bg-slate-50">
   <ul class="list-none flex flex-row space-x-6 pr-8 items-center lg:text-lg font-semibold">
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a class="navlink" href="#hero">Home</a></li>
+    <li><a class="navlink" href="#about">About</a></li>
+    <li><a class="navlink" href="#skills">Skills</a></li>
+    <li><a class="navlink" href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <style>
   li {
-    padding: 1rem;
     margin: 1rem;
+  }
+
+ .navlink {
+    display: block;
+    padding: 1rem;
   }
   
   li:hover {
