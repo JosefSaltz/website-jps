@@ -5,12 +5,12 @@
   import CombinedAppGear from "$lib/assets/svg/combined-app-gear.svelte";
 	import ServiceTile from "$components/OfferedServices/ServiceTile.svelte";
 
-  let { class: className = '', headerSize = '' } = $props();
+  let { class: className = '', aboutHeaderSizes } = $props();
 </script>
 
-<div id="services" class={`w-full flex flex-col items-center ${className}`}>
-  <h1 class={`font-semibold mb-8 self-start ${headerSize}`}>Services</h1>
-  <div id="services-tile-container" class="flex flex-wrap md:flex-row justify-center sm:space-x-8 md:space-x-18">
+<div id="services" class={`${className}`}>
+  <h1 class={`font-semibold mb-8 ${aboutHeaderSizes}`}>Services</h1>
+  <div id="services-tile-container" class="w-full flex justify-center flex-wrap md:flex-row sm:space-x-12 md:space-x-16">
     <ServiceTile name={'App Development'} icons={[CombinedAppGear]} />
     <ServiceTile name={'Consulting'} icons={[chatIcon]} />
     <ServiceTile name={'Hosting'} icons={[serverIcon]} />
