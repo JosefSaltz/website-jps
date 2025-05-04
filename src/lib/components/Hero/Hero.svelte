@@ -4,7 +4,7 @@
 	import TitleText from './TitleText.svelte';
 	import Navbar from '$components/Navbar/Navbar.svelte';
 	import { cn } from '$lib/utils';
-	import LetsGoButton from './LetsGoButton.svelte';
+	import ScrollToSectionButton from './ScrollToSectionButton.svelte';
 </script>
 
 <div
@@ -45,8 +45,8 @@
           <TitleText className={``} />
         </div>
         <!-- Mobile Button -->
-        <div class="flex flex-col justify-center pt-10">
-          <LetsGoButton className={'sm:hidden'} />
+        <div class="sm:hidden flex flex-col items-center justify-center pt-10">
+          <ScrollToSectionButton class={'hidden sm:block'} buttonText={"Let's Go"} targetID={"#about"} />
         </div>
       </div>
       <!-- Desktop Button -->
@@ -54,7 +54,7 @@
         hidden
         sm:flex flex-col items-center justify-center
       `}>
-        <LetsGoButton className={'hidden sm:block'} />
+        <ScrollToSectionButton class={'hidden sm:block'} buttonText={"Let's Go"} targetID={"#about"} />
       </div>
     </div>
   </div>
