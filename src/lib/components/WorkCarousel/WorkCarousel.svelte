@@ -56,7 +56,7 @@
   }  
   .embla__container {    
     display: flex;
-    align-items: center;  
+    align-items: start;  
   }  
   .embla__slide {    
     flex: 0 0 100%;    
