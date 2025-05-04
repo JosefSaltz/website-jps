@@ -9,9 +9,10 @@
     meteorStyles = [];
     const styles = [...new Array(num)].map(() => {
       // Spawn potentially between -40vw and up to 100+ vw for even spread
-      
-      const top = -20
-      const left = (Math.random() * -50) + (Math.random() * 120) + "vw"
+      let randomVal = (Math.random() * -50) + (Math.random() * 120);
+      const top = -20 * randomVal
+      const left = randomVal + "vw"
+  
       return {
         top,
         left,
