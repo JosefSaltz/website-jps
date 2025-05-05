@@ -2,6 +2,9 @@
 	"name": "website-jps",
 	"version": "0.0.1",
 	"type": "module",
+	"engines": {
+		"node": "22"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
