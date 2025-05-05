@@ -1,6 +1,6 @@
 <script lang="ts">
   import { cn } from "$lib/utils";
-
+  import { browser } from '$app/environment';
   let { 
     width = 40, 
     height = 40,
@@ -14,9 +14,11 @@
     ...otherProps
   } = $props();
 
-  let id = crypto.randomUUID().toString().slice(0, 8);
+  let id = $state<string | null>(null);
+  if(browser) id = crypto.randomUUID().toString().slice(0, 8);
 </script>
 
+{#if id}
 <svg
   aria-hidden="true"
   class={cn(
@@ -52,4 +54,6 @@
       {/each}
     </svg>
   {/if}
-</svg>
+</svg> 
+{/if}
+
