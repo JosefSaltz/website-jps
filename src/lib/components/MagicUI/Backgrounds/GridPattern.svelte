@@ -15,7 +15,7 @@
   } = $props();
 
   let id = $state<string | null>(null);
-  if(browser) id = crypto.randomUUID().toString().slice(0, 8);
+  if(browser) id = window.crypto.randomUUID().toString().slice(0, 8);
 </script>
 
 {#if id}
