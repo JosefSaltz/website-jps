@@ -22,6 +22,6 @@ WORKDIR /app
 
 COPY --from=builder /app/build ./build
 
-COPY --from=builder ["/app/deno*", "/app/.env.vault", "/app/package*", "./"]
+COPY --from=builder ["/app/deno*", "/app/package*", "./"]
 
-CMD deno task serve
+CMD ["deno", "task", "serve"]
