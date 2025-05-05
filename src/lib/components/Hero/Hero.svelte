@@ -28,11 +28,11 @@
     />
     
     <div id="hero-content" class="flex flex-col justify-center h-full space-y-32 overflow-clip">
-      
       <div
         id="meteor-title-card"
         class={`
-          relative w-full h-full sm:h-auto xl:w-auto max-w-3xl p-32 
+          relative w-full h-full sm:h-auto xl:w-auto max-w-8xl 
+          p-12 sm:p-36 md:p-[8rem] lg:p-[12rem]
           flex flex-col items-center justify-center 
           sm:rounded-lg overflow-hidden 
           border-[1px] border-slate-800 bg-gradient-to-br from-slate-900 to-black  
@@ -45,8 +45,8 @@
           <TitleText className={``} />
         </div>
         <!-- Mobile Button -->
-        <div class="sm:hidden flex flex-col items-center justify-center pt-10">
-          <ScrollToSectionButton class={'hidden sm:block'} buttonText={"Let's Go"} targetID={"#about"} />
+        <div class="relative top-32 flex flex-col items-center justify-center z-50">
+          <ScrollToSectionButton class={'block sm:hidden'} buttonText={"Let's Go"} targetID={"#about"} />
         </div>
       </div>
       <!-- Desktop Button -->
