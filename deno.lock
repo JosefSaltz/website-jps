@@ -27,6 +27,7 @@
     "npm:prettier@^3.5.3": "3.5.3",
     "npm:resend@^4.2.0": "4.4.0",
     "npm:svelte-check@4": "4.1.6_svelte@5.28.2__acorn@8.14.1_typescript@5.8.3",
+    "npm:svelte-inview@^4.0.4": "4.0.4_svelte@5.28.2__acorn@8.14.1",
     "npm:svelte-motion@~0.12.2": "0.12.2_svelte@5.28.2__acorn@8.14.1",
     "npm:svelte@^5.25.7": "5.28.2_acorn@8.14.1",
     "npm:tailwind-merge@^3.1.0": "3.2.0",
@@ -2016,6 +2017,12 @@
         "svelte"
       ]
     },
+    "svelte-inview@4.0.4_svelte@5.28.2__acorn@8.14.1": {
+      "integrity": "sha512-PlXNSHHijvQ6MhmSYUj6cMyS+39NttoTffk7W5WYF8T2tsyLgJnKhyuAF+/hSujbY0vpsmqXaMd2nolEKvR8Kw==",
+      "dependencies": [
+        "svelte"
+      ]
+    },
     "svelte-motion@0.12.2_svelte@5.28.2__acorn@8.14.1": {
       "integrity": "sha512-7RrdRz9iVP55B9HT/C0hYW3pyrKlF61kAby/AkDtOAP0uHFQDrfd0qQetDC81cEsK9b40jt+jfcqSAXcA7LPEw==",
       "dependencies": [
@@ -2263,6 +2270,7 @@
         "npm:prettier@^3.5.3",
         "npm:resend@^4.2.0",
         "npm:svelte-check@4",
+        "npm:svelte-inview@^4.0.4",
         "npm:svelte-motion@~0.12.2",
         "npm:svelte@^5.25.7",
         "npm:tailwind-merge@^3.1.0",
