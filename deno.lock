@@ -7,7 +7,6 @@
     "npm:@sveltejs/adapter-node@^5.2.12": "5.2.12_@sveltejs+kit@2.20.8__@sveltejs+vite-plugin-svelte@4.0.4___svelte@5.28.2____acorn@8.14.1___vite@5.4.19__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_rollup@4.40.1_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/adapter-static@^3.0.8": "3.0.8_@sveltejs+kit@2.20.8__@sveltejs+vite-plugin-svelte@4.0.4___svelte@5.28.2____acorn@8.14.1___vite@5.4.19__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/enhanced-img@0.4": "0.4.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
-    "npm:@sveltejs/kit@^2.20.4": "2.20.8_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/kit@^2.20.8": "2.20.8_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/vite-plugin-svelte@4": "4.0.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@tailwindcss/aspect-ratio@~0.4.2": "0.4.2_tailwindcss@3.4.17__postcss@8.5.3",
@@ -384,10 +383,10 @@
     "@rollup/plugin-commonjs@28.0.3_rollup@4.40.1_picomatch@4.0.2": {
       "integrity": "sha512-pyltgilam1QPdn+Zd9gaCfOLcnjMEJ9gV+bTw6/r73INdvzf1ah9zLIJBm+kW7R6IUFIQ1YO+VqZtYxZNWFPEQ==",
       "dependencies": [
-        "@rollup/pluginutils@5.1.4_rollup@4.40.1",
+        "@rollup/pluginutils",
         "commondir",
         "estree-walker",
-        "fdir@6.4.4_picomatch@4.0.2",
+        "fdir",
         "is-reference@1.2.1",
         "magic-string",
         "picomatch@4.0.2",
@@ -397,27 +396,19 @@
     "@rollup/plugin-json@6.1.0_rollup@4.40.1": {
       "integrity": "sha512-EGI2te5ENk1coGeADSIwZ7G2Q8CJS2sF120T7jLw4xFw9n7wIOXHo+kIYRAoVpJAN+kmqZSoO3Fp4JtoNF4ReA==",
       "dependencies": [
-        "@rollup/pluginutils@5.1.4_rollup@4.40.1",
+        "@rollup/pluginutils",
         "rollup"
       ]
     },
     "@rollup/plugin-node-resolve@16.0.1_rollup@4.40.1": {
       "integrity": "sha512-tk5YCxJWIG81umIvNkSod2qK5KyQW19qcBF/B78n1bjtOON6gzKoVeSzAE8yHCZEDmqkHKkxplExA8KzdJLJpA==",
       "dependencies": [
-        "@rollup/pluginutils@5.1.4_rollup@4.40.1",
+        "@rollup/pluginutils",
         "@types/resolve",
         "deepmerge",
         "is-module",
         "resolve",
         "rollup"
-      ]
-    },
-    "@rollup/pluginutils@5.1.4": {
-      "integrity": "sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==",
-      "dependencies": [
-        "@types/estree",
-        "estree-walker",
-        "picomatch@4.0.2"
       ]
     },
     "@rollup/pluginutils@5.1.4_rollup@4.40.1": {
@@ -1287,9 +1278,6 @@
         "reusify"
       ]
     },
-    "fdir@6.4.4": {
-      "integrity": "sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg=="
-    },
     "fdir@6.4.4_picomatch@4.0.2": {
       "integrity": "sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==",
       "dependencies": [
@@ -2087,7 +2075,7 @@
       "dependencies": [
         "@jridgewell/trace-mapping",
         "chokidar@4.0.3",
-        "fdir@6.4.4_picomatch@4.0.2",
+        "fdir",
         "picocolors",
         "sade",
         "svelte",
@@ -2268,7 +2256,7 @@
     "vite-imagetools@7.0.5": {
       "integrity": "sha512-OOvVnaBTqJJ2J7X1cM1qpH4pj9jsfTxia1VSuWeyXtf+OnP8d0YI1LHpv8y2NT47wg+n7XiTgh3BvcSffuBWrw==",
       "dependencies": [
-        "@rollup/pluginutils@5.1.4_rollup@4.40.1",
+        "@rollup/pluginutils",
         "imagetools-core",
         "sharp"
       ]
