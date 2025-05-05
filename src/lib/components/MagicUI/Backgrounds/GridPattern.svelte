@@ -1,6 +1,7 @@
 <script lang="ts">
   import { cn } from "$lib/utils";
   import { browser } from '$app/environment';
+	import { onMount } from "svelte";
   let { 
     width = 40, 
     height = 40,
@@ -14,8 +15,13 @@
     ...otherProps
   } = $props();
 
-  let id = $state<string | null>(null);
-  if(browser) id = window.crypto.randomUUID().toString().slice(0, 8);
+  
+  let id;
+  onMount(() => {
+    id = window.crypto.randomUUID().toString().slice(0, 8);
+  })
+  
+
 </script>
 
 {#if id}
