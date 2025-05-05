@@ -9,10 +9,10 @@
     aboutContentSizes 
   } = $props();
   
-  const desktopPortraitSizes = 'h-[16rem] sm:h-[24rem] md:h-[32rem] xl:h-[44rem]'
+  const desktopPortraitSizes = 'h-[16rem] sm:h-[24rem] md:h-[32rem] xl:h-[44rem]';
 </script>
 
-<div id="personal-section" class={`w-full flex justify-center ${className}`}>
+<section id="personal-section" class={`flex ${className}`}>
   <div id="summary-and-desktop-portrait" class="flex max-w-[100rem]">
     <!-- Title and Summary -->
     <div id="title-and-summary-container" class="md:flex md:flex-col md:pb-24 md:space-y-10">
@@ -27,6 +27,6 @@
       </div>
     </div>
     <!-- Desktop Portrait -->
-    <img class={`hidden sm:block rounded-md ml-6 mb-6 xl:m-0 ${desktopPortraitSizes}`} src={selfie} alt="self-portrait">
+    <img class={`hidden w-auto sm:block rounded-md ml-6 mb-6 xl:m-0 ${desktopPortraitSizes}`} src={selfie} alt="self-portrait">
   </div>
-</div>
+</section>

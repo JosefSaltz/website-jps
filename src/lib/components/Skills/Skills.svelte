@@ -1,23 +1,24 @@
 <script lang="ts">
 	import SkillSection from "./SkillSection.svelte";
-  let { sectionPaddingSizes = '', aboutHeaderSizes = '', aboutContentSizes = '' } = $props()
+  let { sectionPaddingSizes = '', sharedHeaderSizes = '', sharedContentSizes = '' } = $props()
+
 </script>
 
-<div 
+<section 
 id="skills"
 class={`
   min-h-screen 
-  text-2xl 
   flex 
   flex-col 
   items-center 
   bg-slate-800  
   text-zinc-200
-  ${sectionPaddingSizes}}
+  ${sectionPaddingSizes}
+  ${sharedContentSizes}
 `}>
 
-  <h2 class={`${aboutHeaderSizes} self-start pb-10`}>Skills</h2>
-  <p class={`max-w-6xl px-10 md:px-20 ${aboutContentSizes}`}>
+  <h2 class={`${sharedHeaderSizes} self-start pb-10`}>Skills</h2>
+  <p class={`max-w-[100rem]`}>
     I've worked with a large amount of web technologies over the last years ranging from popular libraries like <span class="text-sky-800">React</span> and <span class="text-sky-800">Next.js</span> to <span class="text-orange-600">Svelte</span> and <span class="text-orange-600">Svelte Kit.</span> I'm familiar with building APIs and developing front ends with responsive UI and Server side API Endpoints for integrating with any service your business requires.
   </p>
   <div class="mt-16 flex flex-wrap space-x-4">
@@ -88,4 +89,10 @@ class={`
     ]}
   />
   </div>
-</div>
+</section>
+
+<style>
+  #skills p {
+    
+  }
+</style>

@@ -8,7 +8,7 @@
   let { class: className = '', aboutHeaderSizes } = $props();
 </script>
 
-<div id="services" class={`${className}`}>
+<section id="services" class={`w-full ${className} max-w-[100rem]`}>
   <h1 class={`font-semibold mb-8 ${aboutHeaderSizes}`}>Services</h1>
   <div id="services-tile-container" class="w-full flex justify-center flex-wrap md:flex-row sm:space-x-12 md:space-x-16">
     <ServiceTile name={'App Development'} icons={[CombinedAppGear]} />
@@ -16,4 +16,4 @@
     <ServiceTile name={'Hosting'} icons={[serverIcon]} />
     <ServiceTile name={'Web Sites'} icons={[computerIcon]} />
   </div>
-</div>
+</section>
