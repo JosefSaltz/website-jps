@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { enhance } from "$app/forms";
 	import BoxReveal from "$components/MagicUI/BoxReveal/BoxReveal.svelte";
+	import PulsatingButton from "$components/MagicUI/PulsatingButton.svelte";
   let { sectionPaddingSizes = '', sharedHeaderSizes = '' } = $props()
 </script>
 
@@ -13,8 +14,9 @@
     <p class="max-w-[50rem]">Ready to transform your vision into a dynamic web experience? As a Full Stack Developer, I bring ideas to life through expertly crafted websites and robust web applications. Let's connect and explore the possibilities for your next digital venture.</p>
   </BoxReveal>
   <BoxReveal>
-    <p>Contact me now to get started.</p>
+    <a href="mailto:jps.webdev+siteemail@gmail.com"><PulsatingButton>Contact Me</PulsatingButton></a>
   </BoxReveal>
+
   <!--<BoxReveal>
    <form use:enhance method="POST">
     <ul class="space-y-6">
