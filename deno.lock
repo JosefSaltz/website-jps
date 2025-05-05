@@ -7,7 +7,6 @@
     "npm:@sveltejs/enhanced-img@0.5": "0.5.0_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/kit@^2.20.4": "2.20.8_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@sveltejs/vite-plugin-svelte@4": "4.0.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
-    "npm:@sveltejs/vite-plugin-svelte@^5.0.3": "5.0.3_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
     "npm:@tailwindcss/aspect-ratio@~0.4.2": "0.4.2_tailwindcss@3.4.17__postcss@8.5.3",
     "npm:@tailwindcss/container-queries@~0.1.1": "0.1.1_tailwindcss@3.4.17__postcss@8.5.3",
     "npm:@tailwindcss/forms@~0.5.9": "0.5.10_tailwindcss@3.4.17__postcss@8.5.3",
@@ -513,7 +512,7 @@
     "@sveltejs/enhanced-img@0.5.0_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19": {
       "integrity": "sha512-FpctFPkm16tk9/YgBJiSx1tp2Rl3ojPPKk10sCO4UO20YnBIrIDqXg2wTyN9Ywv13nre3yIyCVP1ajCuahKDCQ==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte@4.0.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
+        "@sveltejs/vite-plugin-svelte",
         "magic-string",
         "sharp",
         "svelte",
@@ -526,7 +525,7 @@
     "@sveltejs/kit@2.20.8_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19": {
       "integrity": "sha512-ep9qTxL7WALhfm0kFecL3VHeuNew8IccbYGqv5TqL/KSqWRKzEgDG8blNlIu1CkLTTua/kHjI+f5T8eCmWIxKw==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte@4.0.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
+        "@sveltejs/vite-plugin-svelte",
         "@types/cookie",
         "cookie",
         "devalue",
@@ -545,16 +544,7 @@
     "@sveltejs/vite-plugin-svelte-inspector@3.0.1_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19": {
       "integrity": "sha512-2CKypmj1sM4GE7HjllT7UKmo4Q6L5xFRd7VMGEWhYnZ+wc6AUVU01IBd7yUi6WnFndEwWoMNOd6e8UjoN0nbvQ==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte@4.0.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
-        "debug",
-        "svelte",
-        "vite"
-      ]
-    },
-    "@sveltejs/vite-plugin-svelte-inspector@4.0.1_@sveltejs+vite-plugin-svelte@5.0.3__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19": {
-      "integrity": "sha512-J/Nmb2Q2y7mck2hyCX4ckVHcR5tu2J+MtBEQqpDrrgELZ2uvraQcK/ioCV61AqkdXFgriksOKIceDcQmqnGhVw==",
-      "dependencies": [
-        "@sveltejs/vite-plugin-svelte@5.0.3_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
+        "@sveltejs/vite-plugin-svelte",
         "debug",
         "svelte",
         "vite"
@@ -563,20 +553,7 @@
     "@sveltejs/vite-plugin-svelte@4.0.4_svelte@5.28.2__acorn@8.14.1_vite@5.4.19": {
       "integrity": "sha512-0ba1RQ/PHen5FGpdSrW7Y3fAMQjrXantECALeOiOdBdzR5+5vPP6HVZRLmZaQL+W8m++o+haIAKq5qT+MiZ7VA==",
       "dependencies": [
-        "@sveltejs/vite-plugin-svelte-inspector@3.0.1_@sveltejs+vite-plugin-svelte@4.0.4__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
-        "debug",
-        "deepmerge",
-        "kleur",
-        "magic-string",
-        "svelte",
-        "vite",
-        "vitefu"
-      ]
-    },
-    "@sveltejs/vite-plugin-svelte@5.0.3_svelte@5.28.2__acorn@8.14.1_vite@5.4.19": {
-      "integrity": "sha512-MCFS6CrQDu1yGwspm4qtli0e63vaPCehf6V7pIMP15AsWgMKrqDGCPFF/0kn4SP0ii4aySu4Pa62+fIRGFMjgw==",
-      "dependencies": [
-        "@sveltejs/vite-plugin-svelte-inspector@4.0.1_@sveltejs+vite-plugin-svelte@5.0.3__svelte@5.28.2___acorn@8.14.1__vite@5.4.19_svelte@5.28.2__acorn@8.14.1_vite@5.4.19",
+        "@sveltejs/vite-plugin-svelte-inspector",
         "debug",
         "deepmerge",
         "kleur",
@@ -2339,7 +2316,7 @@
         "npm:@sveltejs/adapter-node@^5.2.12",
         "npm:@sveltejs/enhanced-img@0.5",
         "npm:@sveltejs/kit@^2.20.4",
-        "npm:@sveltejs/vite-plugin-svelte@^5.0.3",
+        "npm:@sveltejs/vite-plugin-svelte@4",
         "npm:@tailwindcss/aspect-ratio@~0.4.2",
         "npm:@tailwindcss/container-queries@~0.1.1",
         "npm:@tailwindcss/forms@~0.5.9",
