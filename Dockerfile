@@ -10,7 +10,7 @@ COPY . .
 RUN apt-get update && apt-get install -y ca-certificates
 
 # Install any needed packages specified in package.json
-RUN deno install --allow-all
+RUN deno install --allow-scripts
 
 RUN deno task build
 
