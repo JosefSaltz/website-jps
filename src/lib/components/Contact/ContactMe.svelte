@@ -6,7 +6,7 @@
 
 <div id="contact" class={`min-h-screen flex flex-col items-center ${sectionPaddingSizes}`}>
   <BoxReveal>
-    <h3 class={`${sharedHeaderSizes} pb-10 place-self-startit`}>Work With Me</h3>
+    <h3 class={`text-6xl pb-10 place-self-startit`}>Work With Me</h3>
   </BoxReveal>
   <BoxReveal><h5 class="text-4xl pb-10">Let’s Build Something Great Together!</h5></BoxReveal>
   <BoxReveal>
