@@ -1,5 +1,5 @@
 <nav id="navbar" class="fixed z-50 top-0 flex flex-row justify-end w-full h-16 bg-slate-50">
-  <ul class="list-none flex flex-row space-x-4 sm:space-x-6 pr-8 items-center lg:text-lg font-semibold">
+  <ul class="list-none flex flex-row space-x-1 sm:space-x-6 pr-8 items-center lg:text-lg font-semibold">
     <li><a class="navlink" href="#hero">Home</a></li>
     <li><a class="navlink" href="#about">About</a></li>
     <li><a class="navlink" href="#skills">Skills</a></li>
