@@ -14,7 +14,7 @@
   };
 </script>
 
-<div id="about" class={`min-h-screen flex flex-col bg-white ${sectionPaddingSizes} space-y-14`}>
+<div id="about" class={`min-h-screen flex flex-col items-center bg-white ${sectionPaddingSizes} space-y-14`}>
   <PersonalSection { ...sharedContentSizing } />
   <OfferedServices { ...sharedContentSizing } />
   <WorkCarousel { ...sharedContentSizing } />
