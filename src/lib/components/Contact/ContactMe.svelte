@@ -8,7 +8,7 @@
   <BoxReveal>
     <h3 class={`${sharedHeaderSizes} pb-10 place-self-startit`}>Work With Me</h3>
   </BoxReveal>
-  <BoxReveal><h5 class="text-4xl">Let’s Build Something Great Together!</h5></BoxReveal>
+  <BoxReveal><h5 class="text-4xl pb-10">Let’s Build Something Great Together!</h5></BoxReveal>
   <BoxReveal>
     <p class="max-w-[50rem]">Ready to transform your vision into a dynamic web experience? As a Full Stack Developer, I bring ideas to life through expertly crafted websites and robust web applications. Let's connect and explore the possibilities for your next digital venture.</p>
   </BoxReveal>
@@ -38,15 +38,3 @@
   </form>
   </BoxReveal> -->
 </div> 
-
-<style>
-  input {
-    list-style: none;
-    width: 30rem;
-  }
-
-  li {
-    display: flex;
-    flex-direction: column;
-  }
-</style>
