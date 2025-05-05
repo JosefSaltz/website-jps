@@ -1,4 +1,4 @@
-FROM denoland/deno:2.2.6 AS builder
+FROM denoland/deno:2.2.12 AS builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -10,12 +10,12 @@ COPY . .
 RUN apt-get update && apt-get install -y ca-certificates
 
 # Install any needed packages specified in package.json
-RUN deno install --allow-scripts
+RUN deno install --allow-all
 
 RUN deno task build
 
 # Use Deno as a new stage to serve the application
-FROM denoland/deno:alpine-2.2.6
+FROM denoland/deno:alpine-2.2.12
 
 # Set the working directory in the container
 WORKDIR /app
