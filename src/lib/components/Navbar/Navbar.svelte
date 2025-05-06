@@ -12,7 +12,7 @@
     margin: 1rem;
   }
 
- .navlink {
+  .navlink {
     display: block;
     padding: 1rem;
   }
@@ -24,4 +24,3 @@
     color: white;
   }
 </style>
-
