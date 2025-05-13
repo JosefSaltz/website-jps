@@ -7,7 +7,7 @@
   <h4 class="font-bold">{name}</h4>
   <ul>
     {#each skills as skill}
-      <li>{skill}</li>
+      <li class="font-thin">{skill}</li>
     {/each}
   </ul>
 </section>

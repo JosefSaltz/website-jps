@@ -27,6 +27,6 @@
       </div>
     </div>
     <!-- Desktop Portrait -->
-    <img class={`hidden w-auto sm:block rounded-md ml-6 mb-6 xl:m-0 ${desktopPortraitSizes}`} src={selfie} alt="self-portrait">
+    <img class={`hidden w-auto sm:block rounded-md ml-6 mb-6 xl:m-0 ${desktopPortraitSizes} shadow-lg`} src={selfie} alt="self-portrait">
   </div>
 </section>
