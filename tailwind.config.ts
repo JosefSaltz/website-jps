@@ -94,6 +94,16 @@ const config: Config = {
             opacity: '0',
           },
         },
+				"orbit": {
+          "0%": {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
 				"spin-around": {
           "0%": {
             transform: "translateZ(0) rotate(0)",
@@ -115,6 +125,7 @@ const config: Config = {
        			"caret-blink": "caret-blink 1.25s ease-out infinite",
 						"magicslide": "magicslide var(--speed) ease-in-out infinite alternate",
 						"meteor": "meteor 5s linear infinite",
+						"orbit": "orbit calc(var(--duration)*1s) linear infinite",
 						"spin-around": "spin-around calc(var(--speed) * 2) infinite linear"
     	},
 		},
