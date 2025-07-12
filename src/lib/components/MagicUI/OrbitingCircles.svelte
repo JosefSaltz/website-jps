@@ -1,12 +1,14 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
     let { 
-      class: className = ""
+      class: className = "",
+      children,
       reverse = false,
       duration = 20,
       delay = 0,
       radius = 50,
-      path = true 
+      path = true,
+      pause = false
     } = $props();
   </script>
   
@@ -30,12 +32,12 @@
       style:--duration={duration}
       style:--radius={radius}
       class={cn(
-        "absolute flex h-full w-full transform-gpu animate-orbit items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10",
+        `absolute flex h-full w-full transform-gpu animate-orbit  items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10`,
         { "[animation-direction:reverse]": reverse },
         className
       )}
     >
-      {@render children()}
+      {@render children?.()}
     </div>
   {/if}
   
