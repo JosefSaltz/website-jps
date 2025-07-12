@@ -15,19 +15,18 @@
     bg-zinc-900 
   `}
 >
-  <!-- Placing navbar here to avoid affecting calculation of viewport -->
-	<Navbar />
 
-  <div class="w-full h-full flex flex-col items-center overflow-hidden">
+
+  <div class="w-full h-full flex flex-col items-center overflow-hidden md:bg-gradient-to-b md:from-transparent md:via-black/20 md:to-black">
     <!-- Creates a grid mesh pattern -->
     <GridPattern
       width={30}
       height={30}
       strokeDashArray="4 2"
-      className={cn('[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]' + 'z-0')}
+      className={cn('[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]' + 'z-0' + '')}
     />
     
-    <div id="hero-content" class="flex flex-col justify-center h-full space-y-32 overflow-clip">
+    <div id="hero-content" class="w-full max-w-[60rem] flex flex-col justify-center h-full space-y-32 overflow-clip">
       <div
         id="meteor-title-card"
         class={`
