@@ -1,4 +1,4 @@
-FROM denoland/deno:2.2.12 AS builder
+FROM denoland/deno:2.3.5 AS builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN deno install --allow-scripts
 RUN deno task build
 
 # Use Deno as a new stage to serve the application
-FROM denoland/deno:alpine-2.2.12
+FROM denoland/deno:alpine-2.3.5
 
 # Set the working directory in the container
 WORKDIR /app
